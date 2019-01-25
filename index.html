@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hey, Trivia!</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title" class="mb-5">Hey, Trivia!</h1>
+        <button type="button" id="start-button" class="btn btn-warning col-4">Start!</button>
+        <div class="row justify-content-center" id="question-area">
+
+            <!-- <button type="button" id="start-button" class="btn btn-warning col-4">Start!</button> -->
+
+            <div class="col-12">
+                <h1 id="timer" class="mb-5">Time remaining: </h1>
+                <h2 class="question mb-5 mt-5">question goes here and will make a little sense but not tons?</h2>
+            </div>
+
+            <div class="list-group col mt-5" id="answer-area">
+            </div>
+            <h1 id="result" class="mb-5 col-12"></h1>
+            <h1 id="right"></h1>
+            <h1 id="wrong"></h1>
+            <h1 id="unanswered"></h1>
+
+        </div>
+
+
+        <div class="row justify-content-center" id="results-area">
+           
+            <button type="button" id="restart-button" class="btn btn-warning col-4">Start!</button>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

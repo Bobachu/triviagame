@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-image: url(../images/congruent_pentagon.png);
+    background-size: cover;
+}
+
+.container {
+    background-color: antiquewhite;
+    margin-top: 80px;
+    padding: 50px;
+}
+
+.list-group-item {
+    background-color: antiquewhite;
+}
