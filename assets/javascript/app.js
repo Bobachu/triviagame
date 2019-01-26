@@ -20,50 +20,50 @@ var gameOver = false;
 var questions = [{
     question: "What was the first planet to be discovered with a telescope?",
     answers: [
-        "Uranus",
-        "Neptune",
-        "Venus",
-        "Jupiter"
+        "1: Uranus",
+        "2: Neptune",
+        "3: Venus",
+        "4: Jupiter"
     ],
     correct: 0,
 },
 {
     question: "In the game \"Joust\", what animal was your mount?",
     answers: [
-        "A Chicken",
-        "A Raptor",
-        "An Ostrich",
-        "A Horse"
+        "1: A Chicken",
+        "2: A Raptor",
+        "3: An Ostrich",
+        "4: A Horse"
     ],
     correct: 2,
 },
 {
     question: "What show debuted in 1963 and became the longest running sci-fi series?",
     answers: [
-        "Star Trek",
-        "Doctor Who",
-        "Lost in Space",
-        "Battlestar: Galactica"
+        "1: Star Trek",
+        "2: Doctor Who",
+        "3: Lost in Space",
+        "4: Battlestar: Galactica"
     ],
     correct: 1,
 },
 {
     question: "On average, we spend 6 months of our lives waiting for what?",
     answers: [
-        "Water to boil",
-        "Bathrooms at large events",
-        "Websites to load",
-        "Traffic ligths to change"
+        "1: Water to boil",
+        "2: Bathrooms at large events",
+        "3: Websites to load",
+        "4: Traffic ligths to change"
     ],
     correct: 3,
 },
 {
     question: "Triskaidekaphobia is the fear of what?",
     answers: [
-        "Triscuits",
-        "The number 13",
-        "Clowns",
-        "Disease"
+        "1: Triscuits",
+        "2: The number 13",
+        "3: Clowns",
+        "4: Disease"
     ],
     correct: 1,
 },
@@ -98,7 +98,7 @@ function timer() {
             unanswered++;
             cleanUp();
             // a message is displayed if time runs out before the question is answered
-            results.text("Oh No!!! You didn't answer :(");
+            results.text("Oh No!!! You didn't answer! :( The correct answer is " + (questions[current].correct + 1));
             clearInterval(counter);
             nextQuestion();
         });
@@ -173,7 +173,7 @@ answerArea.on('click', 'button', function () {
     questions[current].correct;
     if (userPick != questions[current].correct) {
         // a message is displayed for incorrect answer including correct answer
-        results.text("Ahhhhhh! Wrong Answer!");
+        results.text("Ahhhhhh! Wrong Answer! The correct answer is " + (questions[current].correct + 1));
         incorrectAnswer++;
         // timer ends when a question is answered right or wrong
         clearInterval(counter);
